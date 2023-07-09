@@ -1,0 +1,72 @@
+// Font Awesome
+@import "@fortawesome/fontawesome-free/scss/fontawesome.scss"
+@import "@fortawesome/fontawesome-free/scss/solid.scss"
+@import "@fortawesome/fontawesome-free/scss/regular.scss"
+@import "@fortawesome/fontawesome-free/scss/brands.scss"
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap')
+
+// MDB SCSS
+@import "mdb-angular-ui-kit/assets/scss/mdb.scss"
+@import "../../styles"
+
+.left-nav-elements, .right-nav-elements
+    display: flex
+    justify-content: center
+    align-items: center
+    list-style-type: none
+    margin: 0
+    padding: 0
+
+.left-nav-elements
+    margin-left: 20px
+
+.header-icon 
+    height: 50px
+    width: 50px
+    font-size: 50px
+
+.left-nav, .right-nav
+    height: 50px
+    display: flex
+    overflow: hidden
+
+.full-navbar
+    display: flex
+    justify-content: center
+    margin-top: 15px
+
+.push-right
+    margin-left: 200px
+
+.right-nav-elements li, .left-nav-elements li
+    margin-right: 15px
+    margin-left: 15px  
+
+    list-style: none
+    position: relative
+    display: inline
+
+.right-nav-elements li a, .left-nav-elements li a
+    color: $text-color-dark
+    font-size: 22px
+    font-family: 'Josefin Sans', sans-serif
+
+    text-decoration: none
+
+
+.right-nav-elements li:after, .left-nav-elements li:after
+    content: ''
+    position: absolute
+    left: 50%
+    bottom: -2px
+    width: 0px
+    height: 2px
+    background: $wildcard-peach
+    transition: all 0.30s
+
+.right-nav-elements li:hover:after, .left-nav-elements li:hover:after
+    width:100%
+    left: 0
+
+.right-nav-elements li a:hover, .left-nav-elements li a:hover
+    text-decoration: none
