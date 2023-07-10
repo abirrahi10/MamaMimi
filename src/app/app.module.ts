@@ -47,6 +47,7 @@ import { MatIconModule } from '@angular/material/icon';
     MdbValidationModule,
     BrowserAnimationsModule,
     MatIconModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
